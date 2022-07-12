@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,700;1,500;1,600;1,700&display=swap');
+
+
+body {
+
+    margin: 0;
+    background-color: #faf8f1;
+   
+}
+
+#fullCont {
+
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 16vh repeat(4,1fr) 8vh ;
+    width: 100vw;
+    height: 100vh;
+}
+
+#siteHead {
+
+    grid-column: 1/7;
+    grid-row: 1/2;
+    background-color: #2C3639;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-content: center;
+    
+   
+}
+
+#heading1 {
+
+    font-size: 2.2em;
+    color: #faf8f1;
+    justify-self: center;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+#bottom {
+
+    
+    grid-column: 1/7;
+    grid-row: 6/7;
+    background-color: #3F4E4F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bottomW1 {
+
+    color: #DCD7C9;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+
+#sideCl {
+
+    grid-column: 1/2;
+    grid-row: 2/6;
+    background-color: #DCD7C9;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    padding: 2vh;
+    font-family: 'Fira Sans', sans-serif;
+    padding-left: 2.5vh;
+}
+
+#w1,
+#w2 {
+
+    font-weight: 400;
+    font-size: 1.4em;
+    color: #2C3639;
+    font-style: italic;
+}
+
+#w3 {
+
+    font-weight: 400;
+    font-size: 1em;
+    color: #2C3639;
+}
+
+#container {
+
+    grid-column: 2/7;
+    grid-row: 2/6;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.7fr repeat(7,1fr);
+    background-color: #faf8f1;
+    font-family: 'Fira Sans', sans-serif;
+    margin-left: 10vh;
+
+}
+
+#cardsleg {
+
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: 1fr;
+    
+}
+
+.cardsLeg {
+
+    
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 200;
+    font-size: 1em;
+    justify-self: center;
+    align-self: center;
+}
+
+.containercards {
+
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: 1fr;
+}
+
+.containercards > div {
+
+    justify-self: center;
+    align-self: center;
+}
