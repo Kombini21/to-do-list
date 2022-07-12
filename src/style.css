@@ -131,3 +131,23 @@ body {
     justify-self: center;
     align-self: center;
 }
+
+.createTaskBt {
+
+    font-family: 'Fira Sans', sans-serif;
+    width: 18vh;
+    height: 6vh;
+    justify-self: center;
+    align-self: center;
+    border-radius: 20px;
+    color: #2C3639;
+    border: 1px solid #2C3639;
+    background-color:#faf8f1;
+    margin-right: 18vh;
+}
+
+.createTaskBt:hover {
+
+    background-color: #DCD7C9;
+    border: 2px solid #2C3639;
+}

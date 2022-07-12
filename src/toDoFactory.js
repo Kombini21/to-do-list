@@ -58,7 +58,10 @@ export const ToDo = (title, description, dueDate, priority, notes, classe, check
        containerCard.appendChild(divNotes);
        containerCard.appendChild(divClasse);
        containerCard.appendChild(divChecklist);
-       container.appendChild(containerCard);
+
+        const newTaskBt = document.getElementById('create-Task-Bt');
+
+       container.insertBefore(containerCard, newTaskBt);
    }
 
 
