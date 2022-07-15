@@ -1,5 +1,6 @@
 import './style.css';
 import { toDoClick } from './onClickToDoCreation';
+import { criarProjeto } from './projetosDiv';
 
 
 const fullcont = document.getElementById('fullCont');
@@ -36,10 +37,11 @@ const sideW3 = document.createElement('div');
 sideW3.setAttribute('id', 'projetosaba');
 sideCol.appendChild(sideW3);
 
-const sideW4 = document.createElement('div');
-sideW4.setAttribute('id', 'w3');
+const sideW4 = document.createElement('button');
+sideW4.setAttribute('id', 'w3'); 
 sideW4.innerHTML = 'Criar Projeto';
-sideCol.appendChild(sideW4)
+sideW4.addEventListener('click',criarProjeto);
+sideCol.appendChild(sideW4);
 
 
 

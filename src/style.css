@@ -83,7 +83,11 @@ body {
 
     font-weight: 400;
     font-size: 1em;
+    font-family: 'Fira Sans', sans-serif;
     color: #2C3639;
+    height: 5vh;
+    border-radius: 20px;
+    border: 1px solid #3F4E4F;
 }
 
 #container {
@@ -153,6 +157,7 @@ body {
 }
 
 #infoBox {
+
 
     display: grid;
     grid-template-columns: repeat(3,0.5fr);
@@ -244,5 +249,15 @@ body {
     align-self: center;
 }
 
+
+.btProjects {
+
+
+    font-family: 'Fira Sans', sans-serif;
+    border: 1px #3F4E4F solid;
+    background-color: #DCD7C9;
+    border-radius: 20px;
+
+}
 
 
