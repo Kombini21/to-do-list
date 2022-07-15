@@ -7,6 +7,7 @@ export function toDoClick() {
     const btChange = document.getElementById('create-Task-Bt');
 
     const divInfo = document.createElement('div');
+    var id = Math.floor(Math.random() * 10000);
     divInfo.setAttribute('id','infoBox');
 
 
@@ -74,13 +75,6 @@ export function toDoClick() {
     divCateg.setAttribute('class','inputsAgr');
     divInfo.appendChild(divCateg);
 
-    const divCheck = document.createElement('input');
-    divCheck.setAttribute('type','checkbox');
-    divCheck.setAttribute('id','checkInput');
-    divCheck.setAttribute('name','checkInp');
-    divCheck.setAttribute('class','inputsAgr');
-    divInfo.appendChild(divCheck);
-
     const createButton = document.createElement('button');
     createButton.setAttribute('class', 'buttonsAgr');
     createButton.addEventListener('click', aceitarClick);
@@ -96,6 +90,7 @@ export function toDoClick() {
     divInfo.appendChild(createButton1);
 
     container.insertBefore(divInfo, btChange);
+    btChange.style.visibility = 'hidden';
 
 };
 
@@ -115,12 +110,16 @@ function aceitarClick() {
     const piore = document.getElementById('prioriInput').value;
     const anote = document.getElementById('anotInput').value;
     const catege = document.getElementById('categInput').value;
-    const checke = document.getElementById('checkInput').value;
+    
 
     const boxboxinfo = document.getElementById('infoBox');
     boxboxinfo.remove();
-    var todo1 = ToDo(namae, desce, datee, piore, anote, catege, checke);
+    
+    var todo1 = ToDo(namae, desce, datee, piore, anote, catege);
     todo1.createCard();
+
+    const btChange = document.getElementById('create-Task-Bt');
+    btChange.style.visibility = 'visible';
 
 
 };
@@ -130,10 +129,11 @@ function aceitarClick() {
 
 function recusarClick() {
 
+    const boxboxinfo = document.getElementById('infoBox');
+    boxboxinfo.remove();
 
-
-    
-
+    const btChange = document.getElementById('create-Task-Bt');
+    btChange.style.visibility = 'visible';
 };
 
 

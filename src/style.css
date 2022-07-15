@@ -151,3 +151,98 @@ body {
     background-color: #DCD7C9;
     border: 2px solid #2C3639;
 }
+
+#infoBox {
+
+    display: grid;
+    grid-template-columns: repeat(3,0.5fr);
+    grid-template-rows: repeat(4,0.5fr);
+    margin-left: 13vh;
+    margin-right: 25vh;
+    border: #2C3639 1px solid;
+    justify-items: center;
+    row-gap: 1vh;
+    column-gap: 1vh;
+    padding: 1vh;
+}
+
+
+.inputsAgr {
+
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+#nameInput {
+
+
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+#descInput {
+
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+
+#dateInp {
+
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+
+#prioriInput {
+
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+#anotInput {
+
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+#categInput {
+
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+
+
+#createBtt {
+
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+
+#deleteBtt {
+
+    grid-row: 3/4;
+    grid-column: 3/4;
+}
+
+.dttbutton {
+
+    border-radius: 20px;
+    background-color: #faf8f1;
+    border: #3F4E4F 1px solid;
+    height: 8vh;
+    font-family: 'Fira Sans', sans-serif;
+    width: 10vh;
+    align-self: center;
+}
+
+.checkBoxi {
+
+    width: 4vh;
+    height: 4vh;
+    justify-self: center;
+    align-self: center;
+}
+
+
+

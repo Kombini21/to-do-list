@@ -1,5 +1,5 @@
 // This is a factory to create each To do List card.
-export const ToDo = (title, description, dueDate, priority, notes, classe, checklist) => {
+export const ToDo = (title, description, dueDate, priority, notes, classe) => {
 
     // Atribui os valores a cada variavel 
 
@@ -9,7 +9,6 @@ export const ToDo = (title, description, dueDate, priority, notes, classe, check
    var priority = priority;
    var notes = notes;
    var classe = classe;
-   var checklist = checklist;
    var id = Math.floor(Math.random() * 10000);
 
     // Cria o card no DOM
@@ -47,9 +46,22 @@ export const ToDo = (title, description, dueDate, priority, notes, classe, check
        divClasse.setAttribute('class', 'classe');
        divClasse.innerHTML = classe;
 
-       const divChecklist = document.createElement('div');
+       const divChecklist = document.createElement('INPUT');
        divChecklist.setAttribute('class', 'checklist');
-       divChecklist.innerHTML = checklist;
+       divChecklist.setAttribute('name','checkInp');
+       divChecklist.setAttribute('type','checkbox');
+       divChecklist.setAttribute('class','checkBoxi');
+
+       
+
+       const deletTask = document.createElement('button');
+       deletTask.setAttribute('class', 'dttbutton');
+       deletTask.innerHTML = 'Deletar';
+       deletTask.addEventListener('click', function(){
+
+        var contdt = document.getElementById(`${id}`);
+        contdt.remove();
+       })
 
        containerCard.appendChild(divTitle);
        containerCard.appendChild(divDescription);
@@ -58,6 +70,7 @@ export const ToDo = (title, description, dueDate, priority, notes, classe, check
        containerCard.appendChild(divNotes);
        containerCard.appendChild(divClasse);
        containerCard.appendChild(divChecklist);
+       containerCard.appendChild(deletTask);
 
         const newTaskBt = document.getElementById('create-Task-Bt');
 
